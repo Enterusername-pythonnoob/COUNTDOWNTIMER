@@ -1,8 +1,7 @@
 # Countdown Timer
 
-just a powershell countdown simple (3 files and read the README.md if u downloaded this) 
-
-(if u want to run this at powershell copy all the insides of countdown_color) 
+just a powershell countdown simple (3 files and read the README.md if u downloaded this, 
+if u want to run this at powershell copy all the insides of countdown_color) 
 
 A terminal countdown timer for PowerShell with big ASCII-art digits, a custom hex color picker, adjustable duration, and ASCII-boxed menus.
 

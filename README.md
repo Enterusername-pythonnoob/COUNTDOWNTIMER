@@ -1,72 +1,61 @@
-# COUNTDOWNTIMER
-just a powershell countdown simple (3 files)
+# Countdown Timer
 
+just a powershell countdown simple (3 files and read the README.md if u downloaded this)
 
-# Big Number Countdown Timer
+A terminal countdown timer for PowerShell with big ASCII-art digits, a custom hex color picker, adjustable duration, and ASCII-boxed menus.
 
-A PowerShell countdown timer with large ASCII-art digits, a custom hex
-color picker, adjustable duration, and ASCII-boxed menus.
+![PowerShell](https://img.shields.io/badge/PowerShell-5.1%2B-5391FE?logo=powershell&logoColor=white)
+![License](https://img.shields.io/badge/license-MIT-green)
+![Platform](https://img.shields.io/badge/platform-Windows-0078D6)
 
-## Files
+## Features
 
-- `countdown_color_psl.ps1` — the actual script. This does all the work.
-- `countdown.bat` — a launcher. Lets you double-click to run, or run from
-  Command Prompt or PowerShell without worrying about execution policy.
+- Big block-style ASCII digits, redrawn in place (no screen scrolling)
+- Custom colors via ANSI true-color hex codes (`#FF00AA`, or pick from a 7-color rainbow menu)
+- Adjustable countdown duration
+- ASCII-boxed start and restart menus
+- Stop early with `Space`, jump straight into a restart menu
+- Works from Explorer, Command Prompt, or PowerShell via the included `.bat` launcher
+- Quick Edit Mode auto-disabled on launch (prevents the classic console-freeze-on-click bug)
 
-Keep both files in the same folder. The `.bat` looks for the `.ps1` by
-its exact filename, so if you rename one, update the other to match.
+## Getting started
 
-## How to run it
+1. Download `countdown_color_psl.ps1` and `launcher.bat` into the same folder.
+2. Run `launcher.bat`. That's it — works whether you double-click it, run it from `cmd`, or from a PowerShell prompt.
 
-Double-click `countdown.bat`. That's it.
+If Windows blocks the script, right-click the `.ps1` file -> Properties -> check "Unblock", then try again.
 
-It also works if you run it from Command Prompt or from a PowerShell
-window — same file, any of the three.
-
-If Windows still refuses to run it (rare), right-click the `.ps1` file
--> Properties -> check "Unblock" near the bottom, then try again.
-
-## Controls
+## Usage
 
 **Start menu**
-- `start` / `str` / `strt` / `s` — begin the countdown
-- `time` — set how many seconds to count down from
-- `color` — open the color picker
-- `c` / `clr` / `cr` — clear the screen/logs
-- `q` / `quit` / `exit` — quit
+
+| Command | Action |
+|---|---|
+| `start` / `str` / `strt` / `s` | Begin the countdown |
+| `time` | Set the countdown duration |
+| `color` | Open the color picker |
+| `c` / `clr` / `cr` | Clear the screen/logs |
+| `q` / `quit` / `exit` | Quit |
 
 **During the countdown**
-- `Space` — stop early and open the restart menu
-- `Ctrl+C` — force quit (cursor visibility is restored automatically)
 
-**Restart menu** (shown after countdown ends or is stopped)
-- `r` / `rld` / `rload` / `reload` / `restart` — run it again, same
-  duration and color as last time
-- `c` / `clr` / `cr` — clear logs
-- `q` / `quit` / `exit` — quit
+| Key | Action |
+|---|---|
+| `Space` | Stop early, open restart menu |
+| `Ctrl+C` | Force quit |
+
+**Restart menu**
+
+| Command | Action |
+|---|---|
+| `r` / `rld` / `rload` / `reload` / `restart` | Run again with the same settings |
+| `c` / `clr` / `cr` | Clear logs |
+| `q` / `quit` / `exit` | Quit |
 
 ## Color picker
 
-Type `color` from the start menu to choose from a 7-color rainbow
-preset, or pick `h` to enter any custom hex code (e.g. `#FF00AA`).
+Type `color` from the start menu to choose from a 7-color rainbow preset, or enter any custom hex code with `h`. Colors render using ANSI true-color escape codes rather than PowerShell's built-in named colors, since named colors can't represent arbitrary hex values. This needs a modern terminal (Windows Terminal or PowerShell 7+) to render correctly.
 
-Colors use ANSI true-color escape codes, not the built-in PowerShell
-`-ForegroundColor` names — this is what makes arbitrary hex values
-possible. Needs a modern terminal (Windows Terminal or PowerShell 7+
-console) to display correctly; very old `conhost` windows may not
-render true color properly.
+## License
 
-## Duration
-
-Type `time` from the start menu, then type any number of seconds.
-The countdown will start from that number next time you run it, and
-the setting persists across restarts within the same session.
-
-## Notes
-
-- Quick Edit Mode is disabled automatically on startup, which prevents
-  the classic "console freezes when you click inside it" issue.
-- Running the `.ps1` directly inside the PowerShell ISE is blocked —
-  ISE's output pane doesn't support the cursor positioning this script
-  relies on. Use a real PowerShell console, Command Prompt (via the
-  `.bat`), or Windows Terminal instead.
+MIT

@@ -63,6 +63,8 @@ MIT
 
 ## Pictures
 
+same as cmd
+
 <img width="218" height="130" alt="pwrshll- 2" src="https://github.com/user-attachments/assets/7efc9cc1-651c-43c7-9483-da1d7572e494" />
 
 <img width="507" height="193" alt="pwrshll- 3" src="https://github.com/user-attachments/assets/531f3ebd-7d59-499c-90ae-693144ac9d1c" />

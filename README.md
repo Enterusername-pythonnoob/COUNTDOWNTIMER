@@ -2,6 +2,9 @@
 
 just a powershell countdown simple (3 files and read the README.md if u downloaded this)
 
+(if u want to run this at powershell copy all the insides of countdown_color)
+
+
 A terminal countdown timer for PowerShell with big ASCII-art digits, a custom hex color picker, adjustable duration, and ASCII-boxed menus.
 
 ![PowerShell](https://img.shields.io/badge/PowerShell-5.1%2B-5391FE?logo=powershell&logoColor=white)

@@ -61,7 +61,7 @@ Type `color` from the start menu to choose from a 7-color rainbow preset, or ent
 
 MIT
 
-## pictures
+## Pictures
 
 <img width="218" height="130" alt="pwrshll- 2" src="https://github.com/user-attachments/assets/7efc9cc1-651c-43c7-9483-da1d7572e494" />
 

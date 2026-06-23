@@ -66,7 +66,11 @@ MIT
 same as cmd
 
 <img width="218" height="130" alt="pwrshll- 2" src="https://github.com/user-attachments/assets/7efc9cc1-651c-43c7-9483-da1d7572e494" />
+
 <img width="507" height="193" alt="pwrshll- 3" src="https://github.com/user-attachments/assets/531f3ebd-7d59-499c-90ae-693144ac9d1c" />
-<img width="339" height="125" alt="pwrshll- 4" src="https://github.com/user-attachments/assets/65ad9015-c8e2-4a26-9945-b735ca44b4a8" />
+
+<img width="339" height="125" alt="pwrshll- 4" src="https://github.com/user-attachments/assets/65ad9015-c8e2-4a26-9945-b735ca44b4a8" 
+  
 <img width="347" height="365" alt="pwrshll" src="https://github.com/user-attachments/assets/01ad0d70-e412-4187-8939-2baeacd3f37e" />
+
 <img width="416" height="162" alt="pwrshll-1" src="https://github.com/user-attachments/assets/be3e6e72-106b-47b9-a878-e6050c847980" />
